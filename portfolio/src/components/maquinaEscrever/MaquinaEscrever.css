@@ -1,0 +1,18 @@
+.MaquinaEscrever {
+    font-family: monospace;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: piscar 0.8s step-end infinite;
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+}

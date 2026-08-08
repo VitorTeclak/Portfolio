@@ -1,0 +1,64 @@
+.formatacao-home {
+    display: flex;
+    width: 100%;
+}
+.conteudo-home {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    gap: 1rem;
+}
+.texto-desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    animation: esquerda-direita 1.2s ease-in forwards;
+}
+.texto-cinza {
+    color: rgba(150, 150, 150, 1);
+}
+.texto-apresentacao {
+    display: flex;
+    max-width: 32rem;
+    text-indent: 32px;
+
+    animation: baixo-cima 0.8s ease-in forwards;
+    animation-delay: 1.2s;
+
+    /* Fica invisível enquanto espera */
+    opacity: 0;
+}
+.foto-home {
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes esquerda-direita {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes baixo-cima {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

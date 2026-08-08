@@ -1,0 +1,78 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+    font-size: 64px;
+    gap: 6px;
+}
+.linha-superior {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    overflow: hidden;
+}
+
+/* Bem-vindo entrando da esquerda */
+.bem-vindo {
+    display: inline-block;
+    animation: entrarDireita 0.8s ease-in forwards;
+}
+
+/* "ao meu" aparecendo depois */
+.ao-meu {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: aparecerAoMeu 0.8s ease-out 0.8s forwards;
+}
+
+/* Portfólio subindo de baixo */
+.portfolio {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: subirPortfolio 1s ease-out 1.3s forwards;
+}
+
+
+/* =========================
+   ANIMAÇÕES
+   ========================= */
+
+@keyframes entrarDireita {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecerAoMeu {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes subirPortfolio {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
