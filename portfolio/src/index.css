@@ -1,4 +1,10 @@
-@import url('https://googleapis.com');
+@font-face {
+    font-family: 'Stack Sans Text';
+    src: url('./assets/fonts/StackSansText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 body {
   margin: 0;
@@ -7,7 +13,7 @@ body {
   background: #050306;
   position: relative;
   overflow-x: hidden;
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Stack Sans Text', sans-serif;
 }
 
 body::before {
@@ -64,4 +70,28 @@ body::before {
     background-position: 0% 50%;
     filter: brightness(0.8);
   }
+}
+
+button {
+  display: flex;
+  padding: 12px;
+  width: 10rem;
+  border-radius: 12px;
+  cursor: pointer;
+  gap: 6px;
+  justify-content: center;
+}
+button a{
+  color: #000000;
+  text-decoration: none;
+}
+.botao-branco {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #fff;
+}
+.botao-preto {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #fff;
 }

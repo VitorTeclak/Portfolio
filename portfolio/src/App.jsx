@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react'
 
+import { Routes, Route } from 'react-router-dom'
+
 //components
 import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/Navbar'
 
 //pages
 import Home from './pages/home/Home'
+import Sobre from './pages/sobre/Sobre'
+import Portfolio from './pages/portfolio/Portfolio'
 
 import './App.css'
 
@@ -27,18 +31,22 @@ function App() {
 
   return (
     <div className="app">
-      {/* {loading && (
+      {loading && (
         <div className={`intro-screen ${transitioning ? 'intro-saindo' : ''}`}>
           <Intro />
         </div>
       )}
 
       {!loading && (
-        <div className="home-screen"> */}
+        <div className="home-screen">
           <Navbar />
-          <Home />
-        {/* </div>
-      )} */}
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/sobre" element={<Sobre/>} />
+            <Route path="/portfolio" element={<Portfolio/>} />
+          </Routes>
+        </div>
+      )}
     </div>
   )
 }

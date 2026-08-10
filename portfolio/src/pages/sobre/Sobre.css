@@ -1,0 +1,86 @@
+.formatacao-sobre-mim {
+    display: flex;
+    width: 100%;
+}
+.conteudo-sobre-mim {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    gap: 1rem;
+}
+.texto-nome {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    animation: baixo-cima-sobre-mim 0.8s ease-in forwards;
+}
+
+.texto-sobre-mim p {
+    display: flex;
+    max-width: 36rem;
+    text-indent: 32px;
+
+    animation: baixo-cima-sobre-mim 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    animation-delay: 0.8s;
+
+    opacity: 0;
+    
+}
+.texto-cinza {
+    color: rgba(150, 150, 150, 1);
+}
+.card-sobre-mim {
+    display: flex;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background-color: rgb(60, 60, 60, 0.4);
+    border: 1px solid rgb(60, 60, 60);
+    width: fit-content;
+    animation: baixo-cima-sobre-mim 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.botoes-sobre-mim {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    animation: baixo-cima-sobre-mim 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+.foto-sobre-mim {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.foto-sobre-mim img {
+    width: 250px;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 1px solid pink;
+    animation: baixo-cima-sobre-mim 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+
+}
+
+@keyframes baixo-cima-sobre-mim {
+    from {
+        opacity: 0;
+        transform: translateY(30%);
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
