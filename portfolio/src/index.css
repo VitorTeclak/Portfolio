@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Stack Sans Text';
-    src: url('./assets/fonts/StackSansText-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/StackSansText-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -71,19 +71,29 @@ body::before {
     filter: brightness(0.8);
   }
 }
+.texto-cinza {
+  color: rgba(150, 150, 150, 1);
+}
 
 button {
-  display: flex;
-  padding: 12px;
-  width: 10rem;
-  border-radius: 12px;
-  cursor: pointer;
-  gap: 6px;
-  justify-content: center;
+    display: flex;
+    padding: 12px;
+    width: 10rem;
+    border-radius: 12px;
+    cursor: pointer;
+    gap: 6px;
+    justify-content: center;
+
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-button a{
-  color: #000000;
-  text-decoration: none;
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button a {
+    color: #000000;
+    text-decoration: none;
 }
 .botao-branco {
   background-color: #fff;

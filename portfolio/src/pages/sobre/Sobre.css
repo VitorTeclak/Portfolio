@@ -30,9 +30,6 @@
     opacity: 0;
     
 }
-.texto-cinza {
-    color: rgba(150, 150, 150, 1);
-}
 .card-sobre-mim {
     display: flex;
     padding: 0.8rem;

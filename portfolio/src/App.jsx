@@ -5,11 +5,9 @@ import { Routes, Route } from 'react-router-dom'
 //components
 import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/Navbar'
+import AnimatedRoutes from './components/animatedRoutes/AnimatedRoutes'
 
-//pages
-import Home from './pages/home/Home'
-import Sobre from './pages/sobre/Sobre'
-import Portfolio from './pages/portfolio/Portfolio'
+
 
 import './App.css'
 
@@ -40,11 +38,7 @@ function App() {
       {!loading && (
         <div className="home-screen">
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/sobre" element={<Sobre/>} />
-            <Route path="/portfolio" element={<Portfolio/>} />
-          </Routes>
+          <AnimatedRoutes />
         </div>
       )}
     </div>
