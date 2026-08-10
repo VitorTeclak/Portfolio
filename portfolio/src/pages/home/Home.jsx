@@ -2,6 +2,8 @@ import './Home.css'
 
 import MaquinaEscrever from '../../components/maquinaEscrever/MaquinaEscrever'
 
+import imgPerfil from '../../assets/img-perfil.jpeg'
+
 const Home = () => {
   return (
     <div>
@@ -30,7 +32,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='foto-home'>
-                lado direito
+                <img src={imgPerfil} alt="ImagemDePerfil" />
             </div>
             
         </div>
