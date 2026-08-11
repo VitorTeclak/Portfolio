@@ -1,0 +1,24 @@
+.formatacao-portfolio {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.navbar-portfolio {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    padding: 12px;
+    border-radius: 90px;
+    gap: 32px;
+}
+.navbar-portfolio button {
+    background-color: transparent;
+    border: transparent;
+    color: #fff;
+}
+
+.navbar-portfolio button.selecionado {
+    background-color: rgb(90, 90, 90);
+    border-radius: 90px;
+}
