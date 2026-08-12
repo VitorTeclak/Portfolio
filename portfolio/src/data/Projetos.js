@@ -16,7 +16,7 @@ const listaProjetos = [
             "Disponibilização de informações"
         ],
         linkRep: "https://github.com/VitorTeclak/Portfolio/tree/vitor_branch/portfolio",
-        linkWeb: null
+        linkWeb: "https://portfoliovitorteclak.netlify.app/"
     },
     {
         nome: "Projeto de Concessionária Java",
