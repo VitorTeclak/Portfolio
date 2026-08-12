@@ -3,7 +3,7 @@ const listaProjetos = [
         nome: "Projeto Portfólio",
         descricao: `Projeto realizado para exibir meus conhecimentos em desenvolvimento web e apresentar um pouco mais sobre mim, 
         realizado usando React.js e vite focado na arquitetura de componentes`,
-        qtdTecnologias:2,
+        qtdTecnologias:3,
         qtdCaracteristicas:3,
         tecnologias: [
             "React",
