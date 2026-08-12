@@ -56,7 +56,7 @@ const Projeto = () => {
                                     <LuLayers />
                                 </div>
                                 <div className='texto-card-projeto'>
-                                    {projeto.qtdTecnologias}
+                                    {projeto.qtdCaracteristicas}
                                     <span className='texto-cinza'>Principais Carateristicas</span>
                                 </div>
                             </div>
