@@ -86,7 +86,10 @@ button {
 
     transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
+.link {
+  text-decoration: none;
+  color: #fff;
+}
 button:hover {
     transform: scale(1.05);
 }

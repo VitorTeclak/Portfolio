@@ -1,0 +1,128 @@
+.formatacao-projeto {
+    display: flex;
+    width: 100%;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 30%,
+        rgba(255, 255, 255, 0) 60%
+    );
+}
+.conteudo-projeto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    gap: 1rem;
+}
+.formatacao-descricao-projeto {
+    display: flex;
+    width: 70%;
+}
+.formatacao-cards-teconologias {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+}
+.card-projeto {
+    display: flex;
+    gap: 16px;
+    padding: 1.5rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 16px;
+    border: 2px solid rgb(60,60,60);
+}
+.icon-projeto {
+    display: flex;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgb(60, 60, 60);
+}
+.texto-card-projeto {
+    display: flex;
+    flex-direction: column;
+}
+.formatacao-cards-links {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+}
+.card-links {
+    display: flex;
+    gap: 16px;
+    padding: 1.5rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 2px solid rgb(60,60,60);
+
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    
+
+    transition: transform 0.2s ease;
+}
+.card-links:hover {
+    transform: scale(1.05);
+}
+.formatacao-tecnologias {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+.card-tecnologias {
+    padding: 1rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 16px;
+    border: 2px solid rgb(60,60,60);
+}
+.formatacao-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    gap: 1rem;
+}
+.card-caracteristica {
+    background-color: rgb(30, 30, 30);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 2px solid rgb(60,60,60);
+    width: 40rem;
+}
+.animacao-esquerda-direita {
+    animation: esquerda-direita-projeto 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.animacao-direita-esquerda {
+    animation: direita-esquerda-projeto 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes esquerda-direita-projeto {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes direita-esquerda-projeto {
+    from {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -14,13 +14,16 @@ const Portfolio = () => {
   return (
     <div>
       <div className='formatacao-portfolio'>
-        <h1>
-          Vitrine de Portfólio
-        </h1>
+        <div className='animacao-portfolio'>
+          <h1>
+            Vitrine de Portfólio
+          </h1>
 
-        <span className='texto-cinza'>
-          Explore meus projetos, meus certificados e minhas experiencias tecnicas
-        </span>
+          <span className='texto-cinza'>
+            Explore meus projetos, meus certificados e minhas experiencias tecnicas
+          </span>
+        </div>
+        
 
         <div className='navbar-portfolio'>
           <button

@@ -4,6 +4,8 @@ import listaProjetos from '../../data/Projetos';
 
 import { HiMiniArrowRight } from "react-icons/hi2";
 
+import { Link } from 'react-router-dom'
+
 const Projetos = () => {
   return (
     <div className='lista-projetos'>
@@ -19,10 +21,12 @@ const Projetos = () => {
 
             </div>
             <div className='footer-projetos'>
-            <button>
-                <HiMiniArrowRight />
-                Detalhes
-            </button>
+                <Link to={`/projeto/${projeto.nome}`} className='link'>
+                    <button>
+                            <HiMiniArrowRight />
+                            Detalhes
+                    </button>
+                </Link>
             </div>
         </div>
         ))}

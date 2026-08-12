@@ -5,6 +5,8 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 import CVVitor from '../../assets/pdf/CV-VitorTeclak.pdf'
 
+import { Link } from 'react-router-dom'
+
 import imgPerfil from '../../assets/img-perfil.jpeg'
 
 const Sobre = () => {
@@ -50,10 +52,13 @@ const Sobre = () => {
                                 Baixar CV
                             </a>
                         </button>
-                        <button className='botao-preto'>
-                            <HiMiniArrowUpRight />
-                            Ver Projetos
-                        </button>
+                        <Link to={`/portfolio`} className="link">
+                            <button className='botao-preto'>
+                                <HiMiniArrowUpRight />
+                                Ver Projetos
+                            </button>
+                        </Link>
+                        
                     </div>
                 </div>
                 <div className='foto-sobre-mim'>

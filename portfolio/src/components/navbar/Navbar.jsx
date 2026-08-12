@@ -15,9 +15,11 @@ const Navbar = () => {
         <span>vitor.dev</span>
       </div>
       <div className='links-navbar'>
-        <Link to="/" >Home</Link>
-        <Link to="/sobre" >Sobre</Link>
-        <Link to="/portfolio">Portfólio</Link>
+        <Link to="/" className='link'>Home</Link>
+        <Link to="/sobre" className='link'>Sobre</Link>
+        <Link to="/portfolio" className='link'>Portfólio</Link>
+        <Link to="/contato" className='link'>Contatos</Link>
+
       </div>
     </div>
   )

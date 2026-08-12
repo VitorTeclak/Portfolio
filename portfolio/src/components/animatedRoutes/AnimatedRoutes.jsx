@@ -6,6 +6,8 @@ import { useRef, useLayoutEffect } from 'react';
 import Home from '../../pages/home/Home'
 import Sobre from '../../pages/sobre/Sobre'
 import Portfolio from '../../pages/portfolio/Portfolio'
+import Projeto from '../../pages/projeto/Projeto'
+import Contato from '../../pages/contato/Contato';
 
 const routeOrder = ['/', '/sobre', '/portfolio'];
 
@@ -50,9 +52,11 @@ export default function AnimatedRoutes() {
             style={{ position: 'absolute', width: '100%' }}
         >
             <Routes location={location}>
-            <Route path="/" element={<Home />} />
-            <Route path="/sobre" element={<Sobre />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/projeto/:nome" element={<Projeto />} />
+                <Route path="/contato" element={<Contato />} />
             </Routes>
         </motion.div>
         </AnimatePresence>
