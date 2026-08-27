@@ -32,9 +32,13 @@ const Sobre = () => {
                                 Ao longo da minha trajetória, venho buscando 
                                 aprimorar meus conhecimentos, explorar novas tecnologias e desenvolver soluções que unam qualidade, 
                                 eficiência e boas práticas de desenvolvimento. 
+                            </p>
+                            <p>
+                                Tenho como objetivo ampliar minha experiência profissional, para atuar na liderança de equipes de desenvolvimento e, 
+                                futuramente, compartilhar conhecimento e lecionar na área de tecnologia.
                             </p> 
                             <p> 
-                                Fora do mundo da programação, sou um amante da leitura, principalmente de conteúdos relacionados à 
+                                Fora do mundo de desenvolvimento, sou um amante da leitura, principalmente de conteúdos relacionados à 
                                 filosofia, história e educação financeira, que são áreas que 
                                 também despertam bastante meu interesse. 
                             </p> 
