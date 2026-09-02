@@ -19,6 +19,27 @@ const listaProjetos = [
         linkWeb: "https://portfoliovitorteclak.netlify.app/"
     },
     {
+        nome: "Sistema de Login com Autenticação",
+        descricao: `Projeto desenvolvido em Java com Spring Boot para implementação de um sistema de autenticação e autorização utilizando Spring Security e JWT.
+        O projeto utiliza PostgreSQL para armazenamento dos dados relacionados à autenticação. Para rodar o projeto o banco de dados foi iniciado via Docker`,
+        qtdTecnologias: 3,
+        qtdCaracteristicas: 5,
+        tecnologias: [
+            "Java",
+            "Spring Security",
+            "Docker"
+        ],
+        caracteristicas: [
+            "Spring Security",
+            "Spring Data JPA",
+            "JWT",
+            "Banco de dados em container",
+            "Spring Boot"
+        ],
+        linkRep: "https://github.com/VitorTeclak/login-javaAuth",
+        linkWeb: null
+    },
+    {
         nome: "Projeto de Concessionária Java",
         descricao: `O Dealership Project é um sistema desenvolvido em Java com integração a banco de dados relacional, com o objetivo 
             de simular o gerenciamento de uma concessionária de veículos.
