@@ -8,7 +8,8 @@
 .card-projetos {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 100%;
+    box-sizing: border-box;
     gap: 16px;
     padding: 16px;
     background-color: rgb(30, 30, 30);
@@ -55,5 +56,31 @@
         opacity: 1;
         transform: translateY(0);
         filter: blur(0);
+    }
+}
+/* ================= Responsividade ================= */
+@media (max-width: 1100px) {
+    .lista-projetos {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .lista-projetos {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-projetos {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    .titulo-projeto {
+        font-size: 1.25rem;
     }
 }

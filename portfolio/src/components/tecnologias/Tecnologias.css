@@ -15,6 +15,10 @@
     border: 1px solid black;
 animation: baixo-cima-projetos 0.6s ease-in forwards;
 }
+.card-tecnologia img {
+    max-width: 100%;
+    height: auto;
+}
 .card-tecnologia:hover {
     transform: scale(1.05);
 }
@@ -77,5 +81,29 @@ animation: baixo-cima-projetos 0.6s ease-in forwards;
         opacity: 1;
         transform: translateY(0);
         filter: blur(0);
+    }
+}
+/* ================= Responsividade ================= */
+@media (max-width: 1000px) {
+    .lista-tecnologias {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .lista-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .lista-tecnologias {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 1rem;
     }
 }

@@ -29,3 +29,30 @@
         transform: translateY(0);
     }
 }
+/* ================= Responsividade ================= */
+@media (max-width: 600px) {
+    .navbar {
+        width: 92%;
+        padding: 0.75rem 1.25rem;
+        margin: 12px auto;
+    }
+    .links-navbar {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem;
+        border-radius: 24px;
+        width: 90%;
+    }
+    .links-navbar {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

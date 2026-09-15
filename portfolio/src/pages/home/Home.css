@@ -83,3 +83,48 @@
         transform: translateY(0);
     }
 }
+/* ================= Responsividade ================= */
+@media (max-width: 900px) {
+    .formatacao-home {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-home {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3rem;
+        padding: 0 1.5rem;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .texto-desenvolvedor {
+        align-items: center;
+        text-align: center;
+    }
+    .texto-apresentacao {
+        max-width: 100%;
+        text-indent: 0;
+        text-align: left;
+    }
+    .foto-home {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-home {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .texto-desenvolvedor {
+        font-size: 2.5rem;
+    }
+    .foto-home {
+        margin-top: 1.5rem;
+    }
+    .foto-home img {
+        width: 180px;
+        height: 240px;
+    }
+}

@@ -38,3 +38,33 @@
         transform: translateY(0);
     }
 }
+/* ================= Responsividade ================= */
+@media (max-width: 700px) {
+    .formatacao-portfolio {
+        padding: 0 1rem;
+        margin-top: 2rem;
+        box-sizing: border-box;
+    }
+    .navbar-portfolio {
+        gap: 12px;
+        padding: 8px;
+    }
+    .navbar-portfolio button {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .animacao-portfolio h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .animacao-portfolio span {
+        text-align: center;
+        display: block;
+    }
+    .navbar-portfolio {
+        gap: 6px;
+    }
+}

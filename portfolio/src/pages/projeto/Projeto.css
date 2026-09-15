@@ -97,6 +97,8 @@ hr {
     border-radius: 16px;
     border: 2px solid rgb(60,60,60);
     width: 40rem;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .animacao-esquerda-direita {
     animation: esquerda-direita-projeto 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -124,5 +126,55 @@ hr {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+/* ================= Responsividade ================= */
+@media (max-width: 900px) {
+    .formatacao-projeto {
+        flex-direction: column;
+    }
+    .conteudo-projeto {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+    .formatacao-descricao-projeto {
+        width: 100%;
+    }
+    .formatacao-cards-teconologias,
+    .formatacao-cards-links,
+    .formatacao-tecnologias {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    .formatacao-caracteristicas {
+        margin-left: 0;
+        margin-top: 2rem;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-projeto {
+        padding: 0 1rem;
+        margin-top: 0.5rem;
+    }
+    .formatacao-caracteristicas {
+        padding: 0 1rem;
+    }
+    .formatacao-cards-teconologias,
+    .formatacao-cards-links {
+        flex-direction: column;
+    }
+    .card-projeto,
+    .card-links {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .card-caracteristica {
+        padding: 1.5rem;
     }
 }

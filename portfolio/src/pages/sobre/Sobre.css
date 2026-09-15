@@ -81,3 +81,55 @@
         filter: blur(0);
     }
 }
+/* ================= Responsividade ================= */
+@media (max-width: 900px) {
+    .formatacao-sobre-mim {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-sobre-mim {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+        padding: 0 1.5rem;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .texto-nome {
+        align-items: center;
+        text-align: center;
+    }
+    .texto-sobre-mim p {
+        max-width: 100%;
+        text-indent: 0;
+        text-align: left;
+    }
+    .card-sobre-mim {
+        margin: 0 auto;
+    }
+    .botoes-sobre-mim {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .foto-sobre-mim {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-sobre-mim {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+    .texto-nome {
+        font-size: 2.5rem;
+    }
+    .card-sobre-mim {
+        font-size: 0.9rem;
+    }
+    .foto-sobre-mim img {
+        width: 180px;
+    }
+}

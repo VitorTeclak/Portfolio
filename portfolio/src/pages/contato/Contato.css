@@ -12,3 +12,18 @@
 .formatacao-contato a {
     text-decoration: none;
 }
+/* ================= Responsividade ================= */
+.formatacao-contato {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .formatacao-contato {
+        padding: 0 1rem;
+    }
+    .formatacao-contato button {
+        width: 100%;
+        max-width: 20rem;
+    }
+}
