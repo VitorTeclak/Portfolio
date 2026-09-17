@@ -1,11 +1,10 @@
 const listaProjetos = [
     {
-        nome: "E-Comerce Spring Project ",
-        descricao: `O projeto foi realizado visando melhorar as habilidades com Java Spring simulando um ecomerce de pequeno porte podendo adicionar novos usuários e produtos, produtos podem alterar a 
-            quantidade do produto no estoque e também adicionar produtos ao carrinho que é único para cada usuário. A aplicação permite o gerenciamento de usuários, produtos e estoque, além da 
-            possibilidade de adicionar produtos ao carrinho de compras. Cada usuário possui seu próprio carrinho.`,
-        qtdTecnologias:3,
-        qtdCaracteristicas:4,
+        nome: "E-Comerce Spring Project",
+        descricao: `O projeto foi realizado visando melhorar as habilidades com Java Spring simulando um ecomerce de pequeno porte. A aplicação permite o gerenciamento de usuários, 
+        produtos e estoque, além da possibilidade de adicionar produtos ao carrinho de compras. Cada usuário possui seu próprio carrinho.`,
+        qtdTecnologias: 3,
+        qtdCaracteristicas: 4,
         tecnologias: [
             "Java",
             "Spring Security",
@@ -24,8 +23,8 @@ const listaProjetos = [
         nome: "Projeto Portfólio",
         descricao: `Projeto realizado para exibir meus conhecimentos em desenvolvimento web e apresentar um pouco mais sobre mim, 
         realizado usando React.js e vite focado na arquitetura de componentes`,
-        qtdTecnologias:3,
-        qtdCaracteristicas:3,
+        qtdTecnologias: 3,
+        qtdCaracteristicas: 3,
         tecnologias: [
             "React",
             "JavaScript",
